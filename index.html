@@ -103,7 +103,7 @@
             </div>
             <p><span class="text-pink-400">const</span> <span class="text-cyan-300">coreSkills</span> = [<span class="text-emerald-300">'MQL5/Trading'</span>, <span class="text-emerald-300">'ESP32-S3/IoT'</span>, <span class="text-emerald-300">'Chrome-Extensions'</span>, <span class="text-emerald-300">'n8n/RPA'</span>, <span class="text-emerald-300">'Linux/Armbian'</span>];</p>
             <p><span class="text-pink-400">const</span> <span class="text-cyan-300">focus</span> = <span class="text-emerald-300">'Building scalable tools that automate real-world workflows'</span>;</p>
-            <p><span class="text-indigo-400">echo</span> <span class="text-yellow-300">"🚀 16+ Production & Prototype Projects Documented Below"</span>;</p>
+            <p><span class="text-indigo-400">echo</span> <span class="text-yellow-300">"🚀 21+ Production & Prototype Projects Documented Below"</span>;</p>
           </div>
 
           <!-- Action Buttons -->
@@ -112,7 +112,7 @@
               <i data-lucide="code-2" class="w-4 h-4"></i>
               <span>สำรวจโปรเจกต์ทั้งหมด</span>
             </a>
-            <a href="#skills" class="px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition flex items-center gap-2">
+            <a href="#skills" class="px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-750 text-white font-medium text-sm border border-slate-700 transition flex items-center gap-2">
               <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i>
               <span>ดู Tech Stack & Architecture</span>
             </a>
@@ -145,7 +145,7 @@
               <div class="grid grid-cols-2 gap-3 w-full mt-5 pt-4 border-t border-slate-800 text-left font-mono">
                 <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
                   <span class="text-[10px] text-slate-400 block">TOTAL PROJECTS</span>
-                  <span class="text-lg font-bold text-cyan-400">16+ งาน</span>
+                  <span class="text-lg font-bold text-cyan-400">21+ งาน</span>
                 </div>
                 <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
                   <span class="text-[10px] text-slate-400 block">SPECIALTIES</span>
@@ -190,7 +190,7 @@
           >
         </div>
         <span id="project-count-badge" class="px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 font-mono text-xs text-cyan-400 whitespace-nowrap hidden sm:inline-block">
-          16 โปรเจกต์
+          21 โปรเจกต์
         </span>
       </div>
     </div>
@@ -1180,6 +1180,310 @@
                 <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
               <span class="text-[11px] font-mono text-slate-400">Commercial Work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 17. ESP32 THERMAL PRINTER ================= -->
+      <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
+        <div class="img-placeholder-box h-48 group">
+          <img 
+            src="images/projects/esp32-thermal-printer.png" 
+            alt="ESP32 Wireless Thermal Receipt Printer" 
+            class="preview-img"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'printer\' class=\'w-10 h-10 text-cyan-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างเครื่องพิมพ์ความร้อน</span><span class=\'text-[10px] text-slate-400 mt-1\'>esp32-thermal-printer.png</span></div>'; lucide.createIcons();"
+          >
+          <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-cyan-500/30 text-[10px] font-mono text-cyan-300">
+            IoT Hardware
+          </div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                Hardware & POS
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Wireless Printing</span>
+            </div>
+            <h3 class="text-lg font-bold text-white project-title hover:text-cyan-400 transition">
+              ESP32 Wireless Thermal Receipt Printer
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed project-desc">
+              ระบบเครื่องพิมพ์ใบเสร็จความร้อนไร้สายผ่านชิป ESP32 รองรับการสั่งพิมพ์บิล คำสั่งซื้อ ใบปะหน้าพัสดุ และ QR Code ชำระเงินผ่านสัญญาณ Bluetooth และ WiFi REST API จากระบบหน้าร้าน
+            </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C++, Arduino</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">ESC/POS Protocol, Bluetooth SPP/BLE Serial, Async Web Server API, Bitmap Thermal Printing, Dynamic QR Code Generator</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="badge-tech">ESP32</span>
+              <span class="badge-tech">ESC/POS</span>
+              <span class="badge-tech">Thermal Print</span>
+              <span class="badge-tech">Bluetooth SPP</span>
+              <span class="badge-tech">REST API</span>
+            </div>
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between">
+              <button class="btn-view-details text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1" data-project="esp32-thermal-printer">
+                <span>อ่านรายละเอียดเชิงลึก</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[11px] font-mono text-cyan-400">Hardware Mod</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 18. HARRY STOCK INVENTORY ================= -->
+      <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="automation">
+        <div class="img-placeholder-box h-48 group">
+          <img 
+            src="images/projects/harry-stock.png" 
+            alt="Harry Stock Inventory Management System" 
+            class="preview-img"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'boxes\' class=\'w-10 h-10 text-emerald-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Harry Stock</span><span class=\'text-[10px] text-slate-400 mt-1\'>harry-stock.png</span></div>'; lucide.createIcons();"
+          >
+          <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-emerald-500/30 text-[10px] font-mono text-emerald-300">
+            E-Commerce / ERP
+          </div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                Inventory System
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Stock & Sales</span>
+            </div>
+            <h3 class="text-lg font-bold text-white project-title hover:text-cyan-400 transition">
+              Harry Stock - ระบบบริหารจัดการสต็อกสินค้าและคลังสินค้า
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed project-desc">
+              ระบบตัดสต็อกและจัดการคลังสินค้าอัจฉริยะสำหรับร้านค้า ออกแบบระบบบันทึกสินค้าเข้า-ออก การสแกนบาร์โค้ด คำนวณต้นทุน-กำไรแบบอัตโนมัติ และแจ้งเตือนเมื่อสินค้าใกล้หมดสต็อก
+            </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript, PHP / Node.js, SQL</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Relational Database Modeling, Real-time Stock Deduction, Barcode Scanner Integration, Sales Profit Analytics, Role-based Access Control (RBAC)</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="badge-tech">Inventory</span>
+              <span class="badge-tech">Stock Management</span>
+              <span class="badge-tech">SQL</span>
+              <span class="badge-tech">Barcode Scan</span>
+              <span class="badge-tech">Dashboard</span>
+            </div>
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between">
+              <button class="btn-view-details text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1" data-project="harry-stock">
+                <span>อ่านรายละเอียดเชิงลึก</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[11px] font-mono text-emerald-400">Production Used</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 19. KAGGLE STREAM SHOPEE & THAIMART ================= -->
+      <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="automation">
+        <div class="img-placeholder-box h-48 group">
+          <img 
+            src="images/projects/kaggle-shopee-thaimart.png" 
+            alt="Kaggle Stream Shopee & Thaimart Analytics" 
+            class="preview-img"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'database\' class=\'w-10 h-10 text-sky-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Kaggle Stream</span><span class=\'text-[10px] text-slate-400 mt-1\'>kaggle-shopee-thaimart.png</span></div>'; lucide.createIcons();"
+          >
+          <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-sky-500/30 text-[10px] font-mono text-sky-300">
+            Big Data / Kaggle
+          </div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-sky-500/10 border border-sky-500/20 text-sky-400">
+                Data Pipeline
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Stream & Scrape</span>
+            </div>
+            <h3 class="text-lg font-bold text-white project-title hover:text-cyan-400 transition">
+              Kaggle Stream Shopee & Thaimart Data Analytics Pipeline
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed project-desc">
+              ไปป์ไลน์ดึงข้อมูลสตรีมมิ่งและวิเคราะห์ข้อมูลราคาสินค้า แคตตาล็อก และโปรโมชั่นจาก Shopee และ Thaimart ประมวลผลบนคลาวด์ Kaggle เพื่อทำนายทิศทางราคาและยอดขาย
+            </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">Python 3.10, Pandas, SQL</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">E-Commerce Stream Scraping, Kaggle GPU/CPU Cloud Notebooks, Data Pipeline ETL, Trend & Price Volatility Analytics, Parquet Storage</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="badge-tech">Python</span>
+              <span class="badge-tech">Kaggle</span>
+              <span class="badge-tech">Shopee API</span>
+              <span class="badge-tech">Thaimart</span>
+              <span class="badge-tech">Data Pipeline</span>
+            </div>
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between">
+              <button class="btn-view-details text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1" data-project="kaggle-shopee-thaimart">
+                <span>อ่านรายละเอียดเชิงลึก</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[11px] font-mono text-sky-400">Cloud Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 20. CHROME EXTENSION AUTO VIDEO & TIKTOK POST ================= -->
+      <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="extension automation">
+        <div class="img-placeholder-box h-48 group">
+          <img 
+            src="images/projects/tiktok-video-autopost.png" 
+            alt="Chrome Extension Video Creator & TikTok Auto-Poster" 
+            class="preview-img"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'video\' class=\'w-10 h-10 text-pink-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Video Flow & Auto Post</span><span class=\'text-[10px] text-slate-400 mt-1\'>tiktok-video-autopost.png</span></div>'; lucide.createIcons();"
+          >
+          <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-pink-500/30 text-[10px] font-mono text-pink-300">
+            Manifest V3
+          </div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-pink-500/10 border border-pink-500/20 text-pink-400">
+                Extension & Growth
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Video Auto-Post</span>
+            </div>
+            <h3 class="text-lg font-bold text-white project-title hover:text-cyan-400 transition">
+              Chrome Extension: Auto Video Creator & TikTok Poster
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed project-desc">
+              ส่วนขยาย Chrome ขั้นสูงสำหรับอัดบันทึก Flow การใช้งานหรือสร้างคลิปวิดีโอจากภาพและข้อมูลสินค้าอัตโนมัติ พร้อมระบบบอทส่งไฟล์ขึ้นอัพโหลดและโพสต์ลง TikTok โดยตรงแบบ One-Click
+            </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript (ES6+), HTML5 Canvas</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">MediaRecorder API / Canvas Rendering, DOM Automation Injection, TikTok Web Auto-Upload Dispatcher, Automated Caption & Hashtag Injection</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="badge-tech">Chrome MV3</span>
+              <span class="badge-tech">TikTok Auto-Post</span>
+              <span class="badge-tech">Video Engine</span>
+              <span class="badge-tech">Canvas Capture</span>
+            </div>
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between">
+              <button class="btn-view-details text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1" data-project="tiktok-video-autopost">
+                <span>อ่านรายละเอียดเชิงลึก</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[11px] font-mono text-pink-400">Automated Pipeline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 21. PROXMOX CCTV NVR AGENTDVR ================= -->
+      <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="systems">
+        <div class="img-placeholder-box h-48 group">
+          <img 
+            src="images/projects/proxmox-agentdvr.png" 
+            alt="Proxmox CCTV NVR with AgentDVR" 
+            class="preview-img"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'shield-alert\' class=\'w-10 h-10 text-orange-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง AgentDVR บน Proxmox</span><span class=\'text-[10px] text-slate-400 mt-1\'>proxmox-agentdvr.png</span></div>'; lucide.createIcons();"
+          >
+          <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-orange-500/30 text-[10px] font-mono text-orange-300">
+            NVR Surveillance
+          </div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-orange-500/10 border border-orange-500/20 text-orange-400">
+                Security & Systems
+              </span>
+              <span class="text-xs text-slate-400 font-mono">CCTV NVR Server</span>
+            </div>
+            <h3 class="text-lg font-bold text-white project-title hover:text-cyan-400 transition">
+              Proxmox CCTV NVR Server with AgentDVR (iSpy)
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed project-desc">
+              ระบบเครื่องบันทึกกล้องวงจรปิดอัจฉริยะ (Network Video Recorder) ติดตั้ง AgentDVR บน Proxmox VE (LXC Container) รองรับกล้องหลายตัวผ่าน RTSP/ONVIF พร้อมระบบ AI Motion & Human Detection
+            </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">Bash / Shell, Linux SysAdmin</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Proxmox LXC Container, Intel QuickSync GPU Hardware Passthrough, RTSP/ONVIF Protocol Ingestion, AI Object Recognition Trigger, ZFS Storage Pooling</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="badge-tech">Proxmox VE</span>
+              <span class="badge-tech">AgentDVR</span>
+              <span class="badge-tech">CCTV NVR</span>
+              <span class="badge-tech">RTSP / ONVIF</span>
+              <span class="badge-tech">GPU Passthrough</span>
+            </div>
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between">
+              <button class="btn-view-details text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1" data-project="proxmox-agentdvr">
+                <span>อ่านรายละเอียดเชิงลึก</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[11px] font-mono text-emerald-400">24/7 Monitoring</span>
             </div>
           </div>
         </div>
