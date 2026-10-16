@@ -238,6 +238,91 @@ const projectDetails = {
     description: `
       <p class="mb-3">ผลงานการออกแบบอัตลักษณ์แบรนด์ โลโก้ โปสเตอร์ดิจิทัลสำหรับสื่อโซเชียล และป้ายโฆษณา สำหรับแบรนด์ CHANGTHONG Cafe และสื่อมีเดีย Songkhla Focus</p>
     `
+  },
+  'esp32-thermal-printer': {
+    title: 'ESP32 Wireless Thermal Receipt Printer',
+    category: 'IoT, Hardware & POS',
+    badgeColor: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
+    language: 'C++, Arduino',
+    techniques: 'ESC/POS Protocol, Bluetooth SPP/BLE Serial, Async Web Server API, Bitmap Thermal Printing, Dynamic QR Code Generator',
+    tags: ['ESP32', 'ESC/POS', 'Thermal Print', 'Bluetooth SPP', 'REST API'],
+    description: `
+      <p class="mb-3">ระบบเครื่องพิมพ์ใบเสร็จความร้อนไร้สายผ่านชิป ESP32 รองรับการสั่งพิมพ์บิล คำสั่งซื้อ ใบปะหน้าพัสดุ และ QR Code ชำระเงินผ่านสัญญาณ Bluetooth และ WiFi REST API จากระบบหน้าร้าน</p>
+      <h4 class="font-semibold text-white mt-4 mb-2">ฟังก์ชันการทำงานหลัก:</h4>
+      <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm">
+        <li><strong>ESC/POS Standard:</strong> สื่อสารคำสั่งควบคุมเครื่องพิมพ์ความร้อน ตัดกระดาษ และปรับขนาดฟอนต์ได้แม่นยำ</li>
+        <li><strong>Wireless Dual Mode:</strong> สลับโหมดรับคำสั่งพิมพ์ได้ทั้ง Bluetooth Serial (SPP) และยิง Webhook ผ่าน WiFi HTTP REST API</li>
+        <li><strong>Dynamic Bitmap / QR Generator:</strong> แปลงโค้ดข้อความและพิกัดพร้อมเพย์ (PromptPay) ให้กลายเป็นภาพบิตแมปความร้อนพิมพ์ลงใบเสร็จได้ทันที</li>
+      </ul>
+    `
+  },
+  'harry-stock': {
+    title: 'Harry Stock - ระบบบริหารจัดการสต็อกสินค้าและคลังสินค้า',
+    category: 'Full-Stack & E-Commerce',
+    badgeColor: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20',
+    language: 'JavaScript, PHP / Node.js, SQL',
+    techniques: 'Relational Database Modeling, Real-time Stock Deduction, Barcode Scanner Integration, Sales Profit Analytics, Role-based Access Control (RBAC)',
+    tags: ['Inventory', 'Stock Management', 'SQL', 'Barcode Scan', 'Dashboard'],
+    description: `
+      <p class="mb-3">ระบบตัดสต็อกและจัดการคลังสินค้าอัจฉริยะสำหรับร้านค้า ออกแบบระบบบันทึกสินค้าเข้า-ออก การสแกนบาร์โค้ด คำนวณต้นทุน-กำไรแบบอัตโนมัติ และแจ้งเตือนเมื่อสินค้าใกล้หมดสต็อก</p>
+      <h4 class="font-semibold text-white mt-4 mb-2">ฟังก์ชันการทำงานหลัก:</h4>
+      <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm">
+        <li><strong>Real-time Stock Deduction:</strong> ตัดยอดสต็อกสินค้าทันทีเมื่อเกิดคำสั่งซื้อ ป้องกันปัญหาสต็อกจมหรือขายเกิน</li>
+        <li><strong>Barcode / SKU Scanning:</strong> รองรับเครื่องสแกนบาร์โค้ดเพื่อค้นหาและตัดสินค้าได้อย่างรวดเร็วที่หน้าร้าน</li>
+        <li><strong>Profit & Loss Reporting:</strong> ระบบวิเคราะห์ยอดขาย ต้นทุน และกำไรสุทธิแบบเรียลไทม์พร้อมกราฟแสดงผล</li>
+      </ul>
+    `
+  },
+  'kaggle-shopee-thaimart': {
+    title: 'Kaggle Stream Shopee & Thaimart Data Analytics Pipeline',
+    category: 'Big Data & Cloud Analytics',
+    badgeColor: 'text-sky-400 bg-sky-500/10 border-sky-500/20',
+    language: 'Python 3.10, Pandas, SQL',
+    techniques: 'E-Commerce Stream Scraping, Kaggle GPU/CPU Cloud Notebooks, Data Pipeline ETL, Trend & Price Volatility Analytics, Parquet Storage',
+    tags: ['Python', 'Kaggle', 'Shopee API', 'Thaimart', 'Data Pipeline'],
+    description: `
+      <p class="mb-3">ไปป์ไลน์ดึงข้อมูลสตรีมมิ่งและวิเคราะห์ข้อมูลราคาสินค้า แคตตาล็อก และโปรโมชั่นจาก Shopee และ Thaimart ประมวลผลบนคลาวด์ Kaggle เพื่อทำนายทิศทางราคาและยอดขาย</p>
+      <h4 class="font-semibold text-white mt-4 mb-2">ฟังก์ชันการทำงานหลัก:</h4>
+      <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm">
+        <li><strong>Cloud Automated Stream:</strong> รันไปป์ไลน์ดูดข้อมูลอัตโนมัติบน Kaggle Environment โดยไม่ต้องเปลืองทรัพยากรเครื่องตัวเอง</li>
+        <li><strong>Data Wrangling & ETL:</strong> ทำความสะอาดข้อมูลสินค้าที่ซับซ้อน จัดเก็บในรูปแบบ Parquet เพื่อการสืบค้นที่รวดเร็ว</li>
+        <li><strong>Price Intelligence:</strong> วิเคราะห์การเปลี่ยนแปลงราคาและโปรโมชั่นของคู่แข่งเพื่อตั้งราคาที่แข่งขันได้</li>
+      </ul>
+    `
+  },
+  'tiktok-video-autopost': {
+    title: 'Chrome Extension: Auto Video Creator & TikTok Poster',
+    category: 'Chrome Extensions & Automation',
+    badgeColor: 'text-pink-400 bg-pink-500/10 border-pink-500/20',
+    language: 'JavaScript (ES6+), HTML5 Canvas',
+    techniques: 'MediaRecorder API / Canvas Rendering, DOM Automation Injection, TikTok Web Auto-Upload Dispatcher, Automated Caption & Hashtag Injection',
+    tags: ['Chrome MV3', 'TikTok Auto-Post', 'Video Engine', 'Canvas Capture'],
+    description: `
+      <p class="mb-3">ส่วนขยาย Chrome ขั้นสูงสำหรับอัดบันทึก Flow การใช้งานหรือสร้างคลิปวิดีโอจากภาพและข้อมูลสินค้าอัตโนมัติ พร้อมระบบบอทส่งไฟล์ขึ้นอัพโหลดและโพสต์ลง TikTok โดยตรงแบบ One-Click</p>
+      <h4 class="font-semibold text-white mt-4 mb-2">ฟังก์ชันการทำงานหลัก:</h4>
+      <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm">
+        <li><strong>Video Flow Engine:</strong> รวมภาพและเอฟเฟกต์การเคลื่อนไหวผ่าน HTML5 Canvas และบันทึกเป็นไฟล์ WebM/MP4 ด้วย MediaRecorder API</li>
+        <li><strong>TikTok Auto-Uploader:</strong> จำลองการส่งไฟล์ขึ้นหน้าเว็บ Creator ของ TikTok กรอกคำบรรยาย ติดแฮชแท็ก และตั้งเวลาโพสต์อัตโนมัติ</li>
+        <li><strong>Batch Mode:</strong> รองรับการสร้างและโพสต์คลิปหลายคลิปตามคิวงานที่กำหนดไว้ล่วงหน้า</li>
+      </ul>
+    `
+  },
+  'proxmox-agentdvr': {
+    title: 'Proxmox CCTV NVR Server with AgentDVR (iSpy)',
+    category: 'Security & Linux Infrastructure',
+    badgeColor: 'text-orange-400 bg-orange-500/10 border-orange-500/20',
+    language: 'Bash / Shell, Linux SysAdmin',
+    techniques: 'Proxmox LXC Container, Intel QuickSync GPU Hardware Passthrough, RTSP/ONVIF Protocol Ingestion, AI Object Recognition Trigger, ZFS Storage Pooling',
+    tags: ['Proxmox VE', 'AgentDVR', 'CCTV NVR', 'RTSP / ONVIF', 'GPU Passthrough'],
+    description: `
+      <p class="mb-3">ระบบเครื่องบันทึกกล้องวงจรปิดอัจฉริยะ (Network Video Recorder) ติดตั้ง AgentDVR บน Proxmox VE (LXC Container) รองรับกล้องหลายตัวผ่าน RTSP/ONVIF พร้อมระบบ AI Motion & Human Detection</p>
+      <h4 class="font-semibold text-white mt-4 mb-2">ฟังก์ชันการทำงานหลัก:</h4>
+      <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm">
+        <li><strong>LXC Containerization:</strong> รัน AgentDVR บน Linux Container ประหยัดแรมและ CPU มากกว่าการรันบน Windows VM แบบเดิมๆ</li>
+        <li><strong>Hardware GPU Transcoding:</strong> ทำ GPU Passthrough ให้ AgentDVR ใช้ Intel QuickSync หรือ GPU ช่วยถอดรหัสวิดีโอ 24/7 เครื่องไม่ร้อน</li>
+        <li><strong>AI Surveillance:</strong> แยกแยะบุคคล สัตว์เลี้ยง และยานพาหนะ พร้อมส่งการแจ้งเตือนพร้อมภาพถ่ายเข้า Telegram/Mobile Notification ทันที</li>
+      </ul>
+    `
   }
 };
 
