@@ -52,8 +52,7 @@
       <!-- Quick Nav Links -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
         <a href="#projects" class="hover:text-cyan-400 transition">โปรเจกต์ทั้งหมด</a>
-        <a href="#skills" class="hover:text-cyan-400 transition">Tech Stack</a>
-        <a href="#guide" class="hover:text-cyan-400 transition">วิธีอัพโหลด GitHub</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Tech Stack & Architecture</a>
         <a href="#contact" class="hover:text-cyan-400 transition">ติดต่อ</a>
       </nav>
 
@@ -113,9 +112,9 @@
               <i data-lucide="code-2" class="w-4 h-4"></i>
               <span>สำรวจโปรเจกต์ทั้งหมด</span>
             </a>
-            <a href="#guide" class="px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-750 text-white font-medium text-sm border border-slate-700 transition flex items-center gap-2">
-              <i data-lucide="github" class="w-4 h-4 text-slate-300"></i>
-              <span>วิธีโฮสต์บน GitHub Pages</span>
+            <a href="#skills" class="px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition flex items-center gap-2">
+              <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i>
+              <span>ดู Tech Stack & Architecture</span>
             </a>
           </div>
         </div>
@@ -130,7 +129,7 @@
             <div class="relative flex flex-col items-center text-center">
               <div class="relative mb-4">
                 <div class="w-32 h-32 rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-emerald-400 shadow-xl">
-                  <!-- Profile Picture (User image copied to images/profile.jpg) -->
+                  <!-- Profile Picture -->
                   <img src="images/profile.jpg" alt="Naigolf Profile" class="w-full h-full object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1534972195531-a756b1126f24?w=500&auto=format&fit=crop&q=80'">
                 </div>
                 <div class="absolute bottom-1 right-1 w-5 h-5 bg-emerald-500 border-2 border-slate-900 rounded-full" title="Online"></div>
@@ -175,7 +174,7 @@
           ผลงานทั้งหมดที่พัฒนาขึ้น (All Projects)
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
-          คลิกเลือกตามหมวดหมู่ หรือพิมพ์ค้นหาเทคโนโลยีเพื่อดูรายละเอียดเชิงลึกและภาพหน้าจอ
+          คลิกเลือกตามหมวดหมู่ หรือพิมพ์ค้นหาเทคโนโลยีเพื่อดูรายละเอียดเชิงลึก ภาษา และเทคนิคสถาปัตยกรรมที่ใช้
         </p>
       </div>
 
@@ -213,13 +212,12 @@
       <!-- ================= 1. EA MT5 TRADING SYSTEM ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="trading">
         <!-- 📷 Image Slot: EA MT5 -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: นำรูปมาวางที่ images/projects/ea-mt5.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/ea-mt5.png" 
             alt="MT5 EA Trading System Preview" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'candlestick-chart\' class=\'w-10 h-10 text-amber-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ MT5 / Backtest</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/ea-mt5.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'candlestick-chart\' class=\'w-10 h-10 text-amber-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง MT5 / Backtest</span><span class=\'text-[10px] text-slate-400 mt-1\'>ea-mt5.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-amber-500/30 text-[10px] font-mono text-amber-300">
             MT5 / MQL5
@@ -240,6 +238,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               ระบบเทรดทองคำอัตโนมัติบน MetaTrader 5 ใช้กลยุทธ์ Smart Money Concepts (SMC) จับจังหวะ Fair Value Gap (FVG) และ Order Block พร้อมระบบ Gemini AI กรองข่าวแรงจาก ForexFactory และแจ้งเตือน Telegram
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">MQL5, Python 3.10</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Smart Money Concepts (SMC), FVG/OB Detection, Daily EMA 200, Gemini AI News Filter, Telegram Bot API, Risk/Reward 1:1</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -266,13 +276,12 @@
       <!-- ================= 2. TIKTOK LIVE CHAT PRO++ ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="extension automation">
         <!-- 📷 Image Slot: TikTok Live Bot -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/tiktok-live.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/tiktok-live.png" 
             alt="TikTok Live Chat Pro Extension" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'message-square-code\' class=\'w-10 h-10 text-pink-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Extension UI</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/tiktok-live.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'message-square-code\' class=\'w-10 h-10 text-pink-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Extension UI</span><span class=\'text-[10px] text-slate-400 mt-1\'>tiktok-live.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-pink-500/30 text-[10px] font-mono text-pink-300">
             Manifest V3
@@ -293,6 +302,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               ส่วนขยาย Chrome สำหรับมอนิเตอร์และดักจับแชทสดบน TikTok Live แบบ Real-time พร้อมระบบเชื่อมต่อ Telegram Bot แจ้งเตือนคำถามลูกค้า และตอบคำถามอัตโนมัติ
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript (ES6+), HTML5, CSS3</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">DOM MutationObserver (Real-time Intercept), Chrome Extension MV3, Telegram Bot API, Rule-based Auto Response</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -316,13 +337,12 @@
       <!-- ================= 3. AUTOFLOW PRO RECORDER ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="extension automation">
         <!-- 📷 Image Slot: AutoFlow Pro -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/autoflow.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/autoflow.png" 
             alt="AutoFlow Pro Extension" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'play-circle\' class=\'w-10 h-10 text-cyan-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ AutoFlow SidePanel</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/autoflow.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'play-circle\' class=\'w-10 h-10 text-cyan-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง SidePanel</span><span class=\'text-[10px] text-slate-400 mt-1\'>autoflow.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-cyan-500/30 text-[10px] font-mono text-cyan-300">
             Side Panel UI
@@ -345,6 +365,18 @@
             </p>
           </div>
 
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript (ES6+), HTML5, CSS3</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Chrome SidePanel API, Scripting & Event Listener Injection, Macro Replay Engine, Dynamic CSS Selector Matching</span>
+            </div>
+          </div>
+
           <div class="space-y-3">
             <div class="flex flex-wrap gap-1.5">
               <span class="badge-tech">Chrome SidePanel</span>
@@ -365,13 +397,13 @@
 
       <!-- ================= 4. N8N FACEBOOK SCRAPER ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="automation">
-        <!-- 📷 Image Slot: n8n Facebook Scraper (มีไฟล์ภาพตัวอย่างแล้ว) -->
+        <!-- 📷 Image Slot: n8n Facebook Scraper -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/n8n-scraper.png" 
             alt="n8n Workflow Automation" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'workflow\' class=\'w-10 h-10 text-emerald-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ n8n Workflow</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/n8n-scraper.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'workflow\' class=\'w-10 h-10 text-emerald-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง n8n Workflow</span><span class=\'text-[10px] text-slate-400 mt-1\'>n8n-scraper.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-emerald-500/30 text-[10px] font-mono text-emerald-300">
             Pipeline / AI
@@ -392,6 +424,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               ระบบดึงโพสต์จาก Facebook Page อัตโนมัติด้วย Python Playwright เพื่อส่งข้อมูลเข้า n8n Workflow และประมวลผลสรุปเนื้อหาด้วย Hugging Face AI
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">Python 3.11, JavaScript (n8n Node Code)</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Headless/Headful Playwright Automation, Anti-Bot Mobile User-Agent Bypass, Webhook Data Pipeline, Hugging Face NLP Model</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -415,13 +459,12 @@
       <!-- ================= 5. ESP32-S3 XIAOZHI AI VOICE ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
         <!-- 📷 Image Slot: ESP32 Xiaozhi -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/esp32-xiaozhi.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/esp32-xiaozhi.png" 
             alt="ESP32-S3 AI Voice Assistant" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'mic\' class=\'w-10 h-10 text-violet-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพบอร์ด ESP32-S3 AI</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/esp32-xiaozhi.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'mic\' class=\'w-10 h-10 text-violet-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างบอร์ด ESP32-S3 AI</span><span class=\'text-[10px] text-slate-400 mt-1\'>esp32-xiaozhi.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-violet-500/30 text-[10px] font-mono text-violet-300">
             Embedded AI
@@ -442,6 +485,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               สร้างหุ่นยนต์ผู้ช่วยอัจฉริยะแบบพกพาด้วยชิป ESP32-S3 รองรับการฟังเสียง โต้ตอบด้วยเสียงพูด และเชื่อมต่อ Cloud LLM เพื่อสนทนาแบบเรียลไทม์
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C, C++, FreeRTOS</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">ESP-IDF Framework, I2S Digital Audio DMA, Voice Activity Detection (VAD), Streaming STT/TTS, WebSocket Audio Duplex</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -465,13 +520,12 @@
       <!-- ================= 6. ESP32 CHEAP YELLOW DISPLAY ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
         <!-- 📷 Image Slot: ESP32 CYD Dashboard -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/esp32-cyd.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/esp32-cyd.png" 
             alt="ESP32 Cheap Yellow Display Dashboard" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'monitor\' class=\'w-10 h-10 text-teal-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพจอสัมผัส CYD</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/esp32-cyd.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'monitor\' class=\'w-10 h-10 text-teal-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างจอ CYD</span><span class=\'text-[10px] text-slate-400 mt-1\'>esp32-cyd.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-teal-500/30 text-[10px] font-mono text-teal-300">
             LVGL GUI
@@ -492,6 +546,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               หน้าจอสัมผัสอัจฉริยะบนบอร์ด ESP32 CYD แสดงผลสถานะระบบ เซิร์ฟเวอร์ และควบคุมอุปกรณ์ IoT ในบ้านผ่าน UI สวยงาม ออกแบบด้วย LVGL
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C++, Arduino C</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">LVGL GUI Library, TFT_eSPI Driver, XPT2046 Resistive Touch Controller, MQTT Pub/Sub Telemetry, Asynchronous WiFi</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -515,13 +581,12 @@
       <!-- ================= 7. MXQ PRO LINUX SERVER ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="systems">
         <!-- 📷 Image Slot: MXQ Pro Linux -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/mxq-linux.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/mxq-linux.png" 
             alt="MXQ Pro Android TV Linux Porting" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'server\' class=\'w-10 h-10 text-red-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Linux Terminal / กล่อง</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/mxq-linux.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'server\' class=\'w-10 h-10 text-red-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Linux Terminal</span><span class=\'text-[10px] text-slate-400 mt-1\'>mxq-linux.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-red-500/30 text-[10px] font-mono text-red-300">
             Armbian / RK322x
@@ -542,6 +607,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               ชุบชีวิตกล่อง Android TV Box ชิป RK322x/RK3128 ด้วย Multitool และ Miniloader แปลงเป็น Linux Server กินไฟต่ำ รันบริการ 24/7
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">Bash / Shell, Linux CLI</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Rockchip Maskrom Mode, Miniloader & Multitool NAND Dump, U-Boot Compilation, Device Tree (DTS) Patching, Headless Server</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -565,13 +642,12 @@
       <!-- ================= 8. PROXMOX HOMELAB ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="systems">
         <!-- 📷 Image Slot: Proxmox -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/proxmox.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/proxmox.png" 
             alt="Proxmox VE HomeLab" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'hard-drive\' class=\'w-10 h-10 text-orange-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Proxmox Dashboard</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/proxmox.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'hard-drive\' class=\'w-10 h-10 text-orange-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Proxmox Dashboard</span><span class=\'text-[10px] text-slate-400 mt-1\'>proxmox.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-orange-500/30 text-[10px] font-mono text-orange-300">
             Virtualization
@@ -592,6 +668,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               โครงสร้างระบบเสมือน (HomeLab Infrastructure) สำหรับรัน VM และ LXC Containers เพื่อทดสอบบอทเทรด MT5, เซิร์ฟเวอร์ฐานข้อมูล และ Web Service ส่วนตัว
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">Bash, YAML, Linux SysAdmin</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">KVM Full Virtualization, LXC Unprivileged Containers, ZFS Storage Pool, Bridged Networking, Nginx Reverse Proxy</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -615,13 +703,12 @@
       <!-- ================= 9. SHOPEE AFFILIATE FLOW ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="extension automation">
         <!-- 📷 Image Slot: Shopee Affiliate -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/shopee-affiliate.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/shopee-affiliate.png" 
             alt="Shopee Affiliate Extension" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'shopping-bag\' class=\'w-10 h-10 text-orange-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Extension หน้าช้อปปี้</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/shopee-affiliate.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'shopping-bag\' class=\'w-10 h-10 text-orange-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Shopee Affiliate</span><span class=\'text-[10px] text-slate-400 mt-1\'>shopee-affiliate.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-orange-500/30 text-[10px] font-mono text-orange-300">
             E-Commerce
@@ -642,6 +729,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               เครื่องมือช่วยแปลงลิงก์สินค้า ดึงรายละเอียดราคา ส่วนลด และสร้าง Deep Link ติดแท็กแคมเปญอัตโนมัติ เพื่อกระจายสินค้าลงสื่อโซเชียลแบบ One-Click
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript (ES6+), HTML5, CSS3</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Chrome SidePanel API, URL Deep-Linking & Parameterization, DOM Parsing, Multi-store Catalog Syncing</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -665,13 +764,12 @@
       <!-- ================= 10. DIY COMPANION ROBOT ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
         <!-- 📷 Image Slot: Companion Robot -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/companion-robot.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/companion-robot.png" 
             alt="DIY Companion Robot" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'bot\' class=\'w-10 h-10 text-indigo-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพหุ่นยนต์ตั้งโต๊ะ</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/companion-robot.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'bot\' class=\'w-10 h-10 text-indigo-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างหุ่นยนต์</span><span class=\'text-[10px] text-slate-400 mt-1\'>companion-robot.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-indigo-500/30 text-[10px] font-mono text-indigo-300">
             Robotics
@@ -692,6 +790,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               หุ่นยนต์ตั้งโต๊ะเชิงโต้ตอบ ขยับท่าทางตามเสียงและการตรวจจับเซ็นเซอร์ ควบคุมเซอร์โวมอเตอร์เพื่อจำลองอารมณ์ท่าทางน่ารักบนโต๊ะทำงาน
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C++, Arduino</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Multi-Axis Servo Kinematics, Ultrasonic Sensor Fusion, Finite State Machine (FSM) Behavioral Emulation, 3D CAD Parts</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -715,13 +825,12 @@
       <!-- ================= 11. ESP32-S3 CAM VISION ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
         <!-- 📷 Image Slot: ESP32-S3 CAM -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/esp32-cam.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/esp32-cam.png" 
             alt="ESP32-S3 CAM Realtime Vision" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'camera\' class=\'w-10 h-10 text-sky-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพสตรีมกล้อง ESP32-S3</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/esp32-cam.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'camera\' class=\'w-10 h-10 text-sky-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างกล้อง ESP32</span><span class=\'text-[10px] text-slate-400 mt-1\'>esp32-cam.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-sky-500/30 text-[10px] font-mono text-sky-300">
             Vision Node
@@ -742,6 +851,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               โหนดกล้องวงจรปิดไร้สายขนาดเล็กสำหรับสตรีมมิ่งภาพวิดีโอผ่าน WiFi รองรับการตรวจจับความเคลื่อนไหว และส่งข้อมูลภาพไปยังเซิร์ฟเวอร์
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C, C++</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">OV2640 Sensor DMA Framebuffer, MJPEG Streaming over HTTP/WebSocket, Motion Difference Algorithm</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -765,13 +886,12 @@
       <!-- ================= 12. KIDBRIGHT & LINE BEACON ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="iot">
         <!-- 📷 Image Slot: KidBright -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/kidbright.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/kidbright.png" 
             alt="KidBright LINE Beacon IoT" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'radio\' class=\'w-10 h-10 text-green-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปบอร์ด KidBright / โครงงาน</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/kidbright.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'radio\' class=\'w-10 h-10 text-green-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง KidBright</span><span class=\'text-[10px] text-slate-400 mt-1\'>kidbright.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-green-500/30 text-[10px] font-mono text-green-300">
             KidBright / LINE
@@ -792,6 +912,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               ระบบแจ้งเตือนผ่าน LINE Bot และตรวจจับรัศมีตำแหน่งด้วย LINE Beacon ร่วมกับบอร์ด KidBright พร้อมระบบบันทึกพารามิเตอร์ลง EEPROM และควบคุมเซอร์โวทางไกล
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C++, MicroPython</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Bluetooth Low Energy (BLE) Advertising, LINE Simple Beacon Protocol, I2C Sensor Interfacing, Hardware EEPROM</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -815,13 +947,12 @@
       <!-- ================= 13. UNITY AR EXPERIENCE ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="creative">
         <!-- 📷 Image Slot: Unity AR -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/unity-ar.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/unity-ar.png" 
             alt="Unity AR Interactive Mobile Experience" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'box\' class=\'w-10 h-10 text-indigo-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Unity AR / โมเดล 3D</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/unity-ar.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'box\' class=\'w-10 h-10 text-indigo-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Unity AR</span><span class=\'text-[10px] text-slate-400 mt-1\'>unity-ar.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-indigo-500/30 text-[10px] font-mono text-indigo-300">
             Unity / AR
@@ -842,6 +973,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               แอปพลิเคชัน Augmented Reality บนสมาร์ทโฟน ตรวจจับระนาบพื้นผิว (Plane Detection) และวางโมเดล 3 มิติเชิงโต้ตอบในโลกจริงได้อย่างสมจริง
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">C# (.NET)</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Unity 3D Engine, AR Foundation (ARKit & ARCore), SLAM Plane Tracking, Screen-to-World Raycasting, 3D Shaders</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -865,13 +1008,12 @@
       <!-- ================= 14. TIKTOK POPUP PRO ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="extension">
         <!-- 📷 Image Slot: TikTok Popup Pro -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/tiktok-popup.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/tiktok-popup.png" 
             alt="TikTok Popup Pro" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'maximize-2\' class=\'w-10 h-10 text-purple-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Popup Viewer</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/tiktok-popup.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'maximize-2\' class=\'w-10 h-10 text-purple-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Popup</span><span class=\'text-[10px] text-slate-400 mt-1\'>tiktok-popup.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-purple-500/30 text-[10px] font-mono text-purple-300">
             UX Mod
@@ -894,6 +1036,18 @@
             </p>
           </div>
 
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript (ES6+), CSS3</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Chrome Content Script Injection, CSS Backdrop Filter & Viewport Centering, Keyboard Shortcut Event Binding</span>
+            </div>
+          </div>
+
           <div class="space-y-3">
             <div class="flex flex-wrap gap-1.5">
               <span class="badge-tech">Chrome Extension</span>
@@ -914,13 +1068,12 @@
       <!-- ================= 15. FINDER X Y AUTOMATION ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="automation">
         <!-- 📷 Image Slot: Finder X Y -->
-        <!-- แทรกรูปภาพโปรเจกต์ตรงนี้: วางรูปที่ images/projects/finder-xy.png -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/projects/finder-xy.png" 
             alt="Finder X Y Automation Utility" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'crosshair\' class=\'w-10 h-10 text-blue-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพ Finder XY UI</span><span class=\'text-[10px] text-slate-400 mt-1\'>วางไฟล์ที่ images/projects/finder-xy.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'crosshair\' class=\'w-10 h-10 text-blue-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่าง Finder XY</span><span class=\'text-[10px] text-slate-400 mt-1\'>finder-xy.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-blue-500/30 text-[10px] font-mono text-blue-300">
             RPA Tool
@@ -943,6 +1096,18 @@
             </p>
           </div>
 
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">💻 ภาษา:</span>
+              <span class="text-slate-200">JavaScript, Node.js</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">OS Screen Coordinate Mapping, High-DPI Display Scaling Compensation, Desktop Macro Automation Tooling</span>
+            </div>
+          </div>
+
           <div class="space-y-3">
             <div class="flex flex-wrap gap-1.5">
               <span class="badge-tech">Node.js</span>
@@ -962,13 +1127,13 @@
 
       <!-- ================= 16. BRANDING & CREATIVE ================= -->
       <div class="project-card glass-card rounded-2xl overflow-hidden flex flex-col" data-category="creative">
-        <!-- 📷 Image Slot: Branding Design (มี portfolio-banner.png อยู่แล้ว) -->
+        <!-- 📷 Image Slot: Branding Design -->
         <div class="img-placeholder-box h-48 group">
           <img 
             src="images/portfolio-banner.png" 
             alt="Branding Design CHANGTHONG & Songkhla Focus" 
             class="preview-img"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'palette\' class=\'w-10 h-10 text-yellow-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 พื้นที่สำหรับแทรกรูปภาพกราฟิก / แบรนดิ้ง</span><span class=\'text-[10px] text-slate-400 mt-1\'>ใช้ images/portfolio-banner.png</span></div>'; lucide.createIcons();"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-center text-slate-400\'><i data-lucide=\'palette\' class=\'w-10 h-10 text-yellow-400 mb-2\'></i><span class=\'font-mono text-xs font-semibold text-slate-300\'>📷 ภาพตัวอย่างงานออกแบบ</span><span class=\'text-[10px] text-slate-400 mt-1\'>portfolio-banner.png</span></div>'; lucide.createIcons();"
           >
           <div class="absolute top-3 right-3 px-2 py-1 rounded bg-slate-950/80 backdrop-blur border border-yellow-500/30 text-[10px] font-mono text-yellow-300">
             Brand & Media
@@ -989,6 +1154,18 @@
             <p class="text-xs text-slate-300 leading-relaxed project-desc">
               งานออกแบบอัตลักษณ์แบรนด์ โลโก้ โปสเตอร์ดิจิทัลสำหรับสื่อโซเชียล และสื่อสิ่งพิมพ์สำหรับธุรกิจ CHANGTHONG Cafe และสื่อมีเดีย Songkhla Focus
             </p>
+          </div>
+
+          <!-- Language & Technique Box -->
+          <div class="space-y-1.5 text-xs font-mono bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 font-semibold shrink-0">🎨 เครื่องมือ:</span>
+              <span class="text-slate-200">Adobe Photoshop (PSB Master), Illustrator</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-emerald-400 font-semibold shrink-0">⚙️ เทคนิค:</span>
+              <span class="text-slate-300 leading-tight">Brand Identity Guidelines, Non-destructive Layer Masking, CMYK/RGB Color Separation, Typography Pairing</span>
+            </div>
           </div>
 
           <div class="space-y-3">
@@ -1020,7 +1197,7 @@
           <span>Engineering Arsenal</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          เทคโนโลยีและเครื่องมือที่เชี่ยวชาญ (Tech Stack)
+          เทคโนโลยีและสถาปัตยกรรมที่เชี่ยวชาญ (Tech Stack)
         </h2>
         <p class="text-slate-400 text-sm mt-2">
           ประสบการณ์จริงจากการสร้างโซลูชัน ใช้งานในสภาพแวดล้อม Production และ HomeLab
@@ -1085,82 +1262,8 @@
             <li class="flex items-center gap-2"><span class="text-cyan-400">▹</span> Armbian Linux on TV Box (RK322x)</li>
             <li class="flex items-center gap-2"><span class="text-cyan-400">▹</span> Unity 3D & AR Foundation</li>
             <li class="flex items-center gap-2"><span class="text-cyan-400">▹</span> Adobe Photoshop PSB Master</li>
-            <li class="flex items-center gap-2"><span class="text-cyan-400">▹</span> Git & GitHub Pages CI/CD</li>
+            <li class="flex items-center gap-2"><span class="text-cyan-400">▹</span> Git & Cloud Architectures</li>
           </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Deployment & Image Replacement Guide Section (For Devs & You) -->
-  <section id="guide" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="glass-card p-8 rounded-3xl border border-cyan-500/20 relative overflow-hidden">
-      <div class="absolute -top-24 -right-24 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-3xl space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono">
-          <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
-          <span>GitHub Pages & Customization Guide</span>
-        </div>
-
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          วิธีอัพโหลดขึ้น GitHub Pages & วิธีแทรกรูปภาพของคุณ
-        </h2>
-
-        <p class="text-sm text-slate-300 leading-relaxed">
-          เว็บ Portfolio นี้ถูกสร้างแบบ <strong>Zero-Build Static HTML</strong> สามารถนำโฟลเดอร์นี้อัพขึ้น Git และเปิดใช้งาน GitHub Pages ได้ทันที 100% โดยไม่ต้องลง node_modules ใดๆ
-        </p>
-
-        <!-- Step 1: Replace Images -->
-        <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800 space-y-3">
-          <h3 class="text-sm font-bold text-white flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs font-mono">1</span>
-            <span>วิธีแทรกรูปภาพผลงานของคุณ (Image Replacement)</span>
-          </h3>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            เว้นช่องและกำหนดชื่อไฟล์ไว้ให้เรียบร้อยแล้ว เพียงแคปรูปหรือนำรูปภาพของคุณมาวางในโฟลเดอร์ <code class="text-cyan-300 font-mono">images/projects/</code> ตามชื่อด้านล่าง หรือเปลี่ยน path ในไฟล์ <code class="text-cyan-300 font-mono">index.html</code>:
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono text-slate-300 bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-            <div>• <code class="text-amber-400">images/projects/ea-mt5.png</code> (MT5 EA)</div>
-            <div>• <code class="text-pink-400">images/projects/tiktok-live.png</code> (TikTok Live)</div>
-            <div>• <code class="text-cyan-400">images/projects/autoflow.png</code> (AutoFlow)</div>
-            <div>• <code class="text-violet-400">images/projects/esp32-xiaozhi.png</code> (ESP32 AI)</div>
-            <div>• <code class="text-teal-400">images/projects/esp32-cyd.png</code> (ESP32 CYD)</div>
-            <div>• <code class="text-red-400">images/projects/mxq-linux.png</code> (MXQ Linux)</div>
-            <div>• <code class="text-orange-400">images/projects/proxmox.png</code> (Proxmox)</div>
-            <div>• <code class="text-green-400">images/projects/kidbright.png</code> (KidBright)</div>
-          </div>
-        </div>
-
-        <!-- Step 2: Push to GitHub -->
-        <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800 space-y-3">
-          <h3 class="text-sm font-bold text-white flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-mono">2</span>
-            <span>คำสั่ง Git Push ขึ้น GitHub Pages (เพียง 3 นาที)</span>
-          </h3>
-          <p class="text-xs text-slate-400">
-            เปิด PowerShell หรือ Terminal ในโฟลเดอร์นี้ แล้วรันคำสั่งด้านล่างได้เลย:
-          </p>
-          <div class="relative">
-            <pre class="bg-slate-950 text-cyan-300 p-4 rounded-xl text-xs font-mono overflow-x-auto border border-slate-800">
-git init
-git add .
-git commit -m "feat: complete naigolf developer portfolio"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
-git push -u origin main</pre>
-            <button 
-              onclick="copyToClipboard('git init\ngit add .\ngit commit -m &quot;feat: complete naigolf developer portfolio&quot;\ngit branch -M main\ngit remote add origin https://github.com/YOUR_USERNAME/portfolio.git\ngit push -u origin main', 'copy-git-btn')" 
-              id="copy-git-btn"
-              class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 font-mono border border-slate-700 transition"
-            >
-              Copy Script
-            </button>
-          </div>
-          <p class="text-xs text-slate-400">
-            จากนั้นไปที่ <strong>Settings > Pages</strong> ใน GitHub Repository แล้วเลือก Source เป็น <strong>Deploy from a branch (main / root)</strong> แล้วกด Save ครับ!
-          </p>
         </div>
 
       </div>
